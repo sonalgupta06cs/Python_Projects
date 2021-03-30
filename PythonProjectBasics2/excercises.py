@@ -30,12 +30,21 @@ else: # else block for while, in python we can have else for while loop after wh
 ##############################################
 # Car Game
 command = ""
+isCarStarted = False
 while True:
     command = input("> ").lower()
     if command == 'start':
-        print("Car Started, Ready to go!")
+        if isCarStarted:
+            print("Car is already started!")
+        else:
+            isCarStarted = True
+            print("Car Started, Ready to go!")
     elif command == 'stop':
-        print("Car Stopped.")
+        if not isCarStarted:
+            print("Car is already stopped.")
+        else:
+            isCarStarted = False
+            print("Car Stopped.")
     elif command == 'help':
         print('''start - to start the car        
 stop - to stop the car
@@ -44,6 +53,5 @@ quit - to quit the car''')
         break
     else:
         print("Sorry, I don't understand that!")
-
 
 
