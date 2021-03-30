@@ -37,7 +37,7 @@ while True:
     elif command == 'stop':
         print("Car Stopped.")
     elif command == 'help':
-        print('''start - to start the car
+        print('''start - to start the car        
 stop - to stop the car
 quit - to quit the car''')
     elif command == 'quit':
