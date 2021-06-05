@@ -1,3 +1,10 @@
+# Tuples are like lists, but they are immutable
+#tuples_lists = (1, 2, 3)
+# [0] = 10 # error cant be changes as it is immutable
+#tuples_lists.count(1)
+#tuples_lists.index() # returns the index of the elements
+
+
 # Lists, a list of elementsround
 print("----------List Method Operations-----------------")
 names = ["John", "Bob", "Mosh", "Sam", "Marry"]
@@ -9,6 +16,7 @@ print("updated list elements: " + str(names))
 print("selected number of elements: " + str(names[0:3])) # last index is excluding the elements, it returns a new list
 
 
+##############################################
 # List Methods, string in python are objects, list are also objects, so they also have objects
 numbers = [1, 2, 3, 4, 5, 6]
 numbers.append(7)
@@ -20,4 +28,7 @@ print(1 in numbers)
 print(len(numbers)) # size of the list
 numbers.clear() # clears everything from the list
 print("final list of numbers: "+str(numbers))
+
+
+
 

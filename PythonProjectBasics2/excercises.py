@@ -1,7 +1,10 @@
+##############################################
+
 weight_lbs = input("Enter your weight in pounds :- ")
 weight_kgs = int(weight_lbs) * 0.45
 print('weight in kgs ' + str(weight_kgs))
 
+##############################################
 # House value to put down by x%
 price_house = 1000000
 has_good_credits = True
@@ -54,4 +57,4 @@ quit - to quit the car''')
     else:
         print("Sorry, I don't understand that!")
 
-
+##############################################
